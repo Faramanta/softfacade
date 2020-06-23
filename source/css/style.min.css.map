@@ -1,0 +1,1 @@
+{"version":3,"sources":["header.scss"],"names":[],"mappings":"AAAA,Y,CACI,c,CACA,c,CACA,W,CACA,W,CAGJ,U,CACI,gB,CACA,a","file":"style.min.css","sourcesContent":[".page-header {\r\n    background: red;\r\n    padding: 0 20px;\r\n    margin: 30px;\r\n    color: green;\r\n}\r\n\r\n.container {\r\n    max-width: 1000px;\r\n    margin: 0 auto;\r\n}"]}

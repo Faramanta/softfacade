@@ -1,0 +1,440 @@
+.main {
+	flex-grow: 1;
+
+	&__img {
+		display: block;
+		width: 100%;
+		max-width: 728px;
+		height: auto;
+		margin: 18px auto 0;
+
+		&--decktop {
+			display: none;
+		}
+	}
+}
+
+.columns {
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.campaign {
+	display: flex;
+	justify-content: space-between;
+	margin: 23px auto 0;
+
+	&__candidat {
+		max-width: 180px;
+	}
+
+	&__election {
+		text-align: right;
+
+		.campaign__cnt {
+			margin: 0 0 0;
+		}
+	}
+
+	&__ttl {
+		margin: 0;
+		font-size: 14px;
+		font-weight: bold;
+		line-height: 18px;
+	}
+
+	&__cnt {
+		margin: 2px 0 0;
+		font-size: 12px;
+		line-height: 17px;
+		color: $dark;
+	}
+
+	&__cnt-up {
+		margin: 4px 0 2px;
+		line-height: 13px;
+		font-weight: 500;
+		font-size: 10px;
+		text-align: right;
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
+	}
+}
+
+.donation {
+	margin: 26px 0 0;
+
+	&__ttl {
+		margin: 0;
+		font-size: 28px;
+		font-weight: bold;
+		line-height: 36px;
+	}
+
+	&__cnt-row {
+		display: flex;
+		justify-content: space-between;
+		margin: 6px 0 0;
+	}
+
+	&__cnt {
+		margin: 3px 0 0;
+		font-size: 12px;
+		font-weight: normal;
+		line-height: 15px;
+		color: $dark;
+	}
+
+	&__bar {
+		position: relative;
+		width: 100%;
+		height: 7px;
+		margin: 11px 0 0;
+		border-radius: 99px;
+		background: #F0F0F0;
+		
+		&-progress {
+			position: absolute;
+			content: '';
+			left: 0;
+			top: 0;
+			bottom: 0;
+			width: 238px;
+			border-radius: 99px;
+			background: #2ACBA5;
+		}
+	}
+}
+
+.btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 99px;
+	cursor: pointer;
+
+	&-primary {
+		height: 40px;
+		width: 100%;
+		margin: 32px auto 0;
+		background: #FF4778;
+		border: none;
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 21px;
+		color: $white;
+		text-transform: uppercase;
+
+		&:hover {
+			box-shadow: 0 4px 8px rgba(255, 71, 120, 0.5)
+		}
+	}
+
+	&-candidate {
+		width: 160px;
+		height: 32px;
+		background: $white;
+		border: 1px solid $purple;
+		box-shadow: 0 4px 8px rgba(27, 225, 175, 0.16);
+		font-size: 12px;
+		font-weight: 500;
+		line-height: 18px;
+		color: $purple;
+		text-transform: uppercase;
+		box-sizing: border-box;
+
+		&:hover {
+			box-shadow: 0 4px 8px rgba(27, 225, 175, 0.5);
+		}
+	}
+}
+
+.btn__row {
+	display: flex;
+	justify-content: space-between;
+	margin: 22px 0 0;
+}
+
+.events {
+	position: relative;
+	margin: 34px 0 0;
+
+	&__link {
+		position: absolute;
+		right: 0;
+		top: 1px;
+		font-size: 14px;
+		line-height: 21px;
+		color: #D83863;
+		text-decoration: none;
+	}
+
+	&__calendar {
+		margin: 16px 0 0;
+	}
+}
+
+.calendar {
+	width: 100%;
+	background: #F3F5FE;
+	padding: 15px 24px 17px;
+	border-radius: 18px;
+
+	&__date {
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0 20px 0 0;
+		text-align: center;
+
+		&-day {
+			margin: 0 auto;
+			font-size: 10px;
+			font-weight: 500;
+			line-height: 13px;
+			letter-spacing: 0.5px;
+			text-transform: uppercase;
+		}
+
+		&-number {
+			margin: -3px auto 0;
+			font-size: 28px;
+			font-weight: bold;
+			line-height: 36px;
+			color: $purple;
+		}
+	}
+
+	&__info {
+		display: inline-block;
+		vertical-align: middle;
+		width: calc(100% - 60px);
+
+		&-event {
+			margin: 0;
+			font-size: 14px;
+			font-weight: 500;
+			line-height: 18px;
+		}
+
+		&-cnt {
+			margin: 6px 0 0;
+			font-size: 12px;
+			font-weight: normal;
+			line-height: 15px;
+			color: $dark;
+
+			& + .calendar__info-cnt {
+				margin: 4px 0 0;
+			}
+		}
+	}
+
+	&__icon {
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0 1px 0 0;
+	}
+}
+
+.tabs {
+	margin: 42px 0 0;
+
+	&__bar {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		font-size: 0;
+	}
+
+	&__tab {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height:40px;
+		width: 33.3%;
+		cursor: pointer;
+
+		&:hover {
+			box-shadow: 0 6px 0 0 rgba(190, 164, 225, 0.15);;
+		}
+
+		&-ttl {
+			font-weight: 500;
+			font-size: 12px;
+			line-height: 14px;
+			text-transform: uppercase;
+			margin: 0;
+		}
+
+		&.active {
+			box-shadow: 0 6px 0 0 #bea4e1;
+		}
+	}
+
+	&__panel {
+		display: none;
+		padding: 39px 0 0;
+
+		&.active {
+			display: block;
+		}
+	}
+}
+
+.filter {
+	max-width: 335px;
+	margin: 28px 0 0;
+
+	& + .filter {
+		margin: 31px 0 0;
+	}
+
+	&__ttl {
+		margin: 0;
+		font-size: 12px;
+		font-weight: 500;
+		line-height: 18px;
+		letter-spacing: 0.2px;
+		text-transform: uppercase;
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		list-style: none;
+		margin: 9px 0 0;
+		padding: 0;
+	}
+
+	&__item {
+		display: inline-block;
+		vertical-align: top;
+		margin: 0 7px 8px 0;
+	}
+
+	&__tag {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 28px;
+		padding: 0 14px;
+		background: #F2EAFE;
+		border-radius: 100px;
+		font-size: 12px;
+		font-weight: 500;
+		line-height: 18px;
+		color: $purple;
+		text-decoration: none;
+		white-space: nowrap;
+	}
+}
+
+@media screen and (min-width: 1024px){
+	.main {
+		background: #fafafa;
+
+		&__img {
+			margin: 31px 0 0;
+
+			&--mobile {
+				display: none;
+			}
+
+			&--decktop {
+				display: block;
+			}
+		}
+	}
+
+	.columns {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.column {
+		&--left {
+			width: calc(100% - 372px);
+			margin: 0 36px 0 0;
+		}
+
+		&--right {
+			width: 336px;
+		}
+	}
+
+	.tabs {
+		margin: 51px 0 0;
+
+		&__panel {
+			padding: 55px 0 0;
+		}
+	}
+
+	.filter {
+		margin: 23px 0 0;
+
+		&__item {
+			margin: 0 8px 8px 0;
+		}
+	}
+
+	.campaign {
+		margin: 33px auto 0;
+
+		&__candidat {
+
+			.campaign__ttl {
+				font-size: 18px;
+				line-height: 23px;
+			}
+
+			.campaign__cnt {
+				font-size: 14px;
+				line-height: 20px;
+				margin: 0;
+			}
+		}
+
+		&__cnt-up {
+			font-size: 12px;
+			line-height: 15px;
+			margin: 4px 0 3px;
+		}
+	}
+
+	.donation {
+		max-width: 336px;
+		margin: 40px 0 0 3px;
+	}
+
+	.btn {
+		&-primary {
+			max-width: 336px;
+		}
+	}
+
+	.btn__row {
+		max-width: 336px;
+		margin: 24px 0 0;
+	}
+
+	.events {
+		margin: 63px 0 0;
+
+		&__link {
+			top: 0;
+		}
+
+		&__calendar {
+			margin: 12px 0 0;
+		}
+	}
+
+	.calendar {
+		&__info {
+			&-cnt {
+				margin: 7px 0 0;
+			}
+		}
+	}
+}

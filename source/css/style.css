@@ -1,0 +1,9 @@
+.page-header {
+  background: red;
+  padding: 0 20px;
+  margin: 30px;
+  color: green; }
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto; }
