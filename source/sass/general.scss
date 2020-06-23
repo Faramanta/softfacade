@@ -80,7 +80,7 @@ body {
 
 	.container {
 		max-width: 1143px;
-		padding: 0 28px 0 16px;
+
 	}
 
 	.ttl1 {
@@ -96,4 +96,8 @@ body {
 		font-size: 18px;
 		line-height: 23px;
 	}
+}
+
+@media screen and (min-width: 1280px) {
+	padding: 0 28px 0 16px;
 }

@@ -91,7 +91,7 @@
 		height: 7px;
 		margin: 11px 0 0;
 		border-radius: 99px;
-		background: #F0F0F0;
+		background: $bar-bg;
 		
 		&-progress {
 			position: absolute;
@@ -101,7 +101,7 @@
 			bottom: 0;
 			width: 238px;
 			border-radius: 99px;
-			background: #2ACBA5;
+			background: $bar-progress-bg;
 		}
 	}
 }
@@ -117,7 +117,7 @@
 		height: 40px;
 		width: 100%;
 		margin: 32px auto 0;
-		background: #FF4778;
+		background: $pink;
 		border: none;
 		font-size: 14px;
 		font-weight: 500;
@@ -126,7 +126,7 @@
 		text-transform: uppercase;
 
 		&:hover {
-			box-shadow: 0 4px 8px rgba(255, 71, 120, 0.5)
+			box-shadow: 0 4px 8px transparentize($pink, 0.5);
 		}
 	}
 
@@ -135,7 +135,7 @@
 		height: 32px;
 		background: $white;
 		border: 1px solid $purple;
-		box-shadow: 0 4px 8px rgba(27, 225, 175, 0.16);
+		box-shadow: 0 4px 8px transparentize($btn-shadow, 0.84);
 		font-size: 12px;
 		font-weight: 500;
 		line-height: 18px;
@@ -144,7 +144,7 @@
 		box-sizing: border-box;
 
 		&:hover {
-			box-shadow: 0 4px 8px rgba(27, 225, 175, 0.5);
+			box-shadow: 0 4px 8px transparentize($btn-shadow, 0.6);
 		}
 	}
 }
@@ -165,7 +165,7 @@
 		top: 1px;
 		font-size: 14px;
 		line-height: 21px;
-		color: #D83863;
+		color: $red;
 		text-decoration: none;
 	}
 
@@ -176,7 +176,7 @@
 
 .calendar {
 	width: 100%;
-	background: #F3F5FE;
+	background: $calendar-bg;
 	padding: 15px 24px 17px;
 	border-radius: 18px;
 
@@ -255,7 +255,7 @@
 		cursor: pointer;
 
 		&:hover {
-			box-shadow: 0 6px 0 0 rgba(190, 164, 225, 0.15);;
+			box-shadow: 0 6px 0 0 transparentize($tab-border, 0.75);
 		}
 
 		&-ttl {
@@ -267,7 +267,7 @@
 		}
 
 		&.active {
-			box-shadow: 0 6px 0 0 #bea4e1;
+			box-shadow: 0 6px 0 0 $tab-border;
 		}
 	}
 
@@ -318,7 +318,7 @@
 		align-items: center;
 		height: 28px;
 		padding: 0 14px;
-		background: #F2EAFE;
+		background: $tag-bg;
 		border-radius: 100px;
 		font-size: 12px;
 		font-weight: 500;
@@ -331,7 +331,7 @@
 
 @media screen and (min-width: 1024px){
 	.main {
-		background: #fafafa;
+		background: $main-bg;
 
 		&__img {
 			margin: 31px 0 0;
