@@ -137,28 +137,18 @@
 }
 
 @media screen and (min-width: 768px) {
-	.header {
-
-		.container {
-			height: 80px;
-		}
-	}
-
-	.mobile-nav {
-		&.active {
-			right: -20px;
-			left: -20px;
-		}
-	}
-}
-
-@media screen and (min-width: 1024px){
+	//.header {
+	//
+	//	.container {
+	//		height: 80px;
+	//	}
+	//}
 	.header {
 		border: 1px solid #ECECEC;
 
 		.container {
 			justify-content: space-between;
-			height: 120px;
+			height: 100px;
 		}
 	}
 
@@ -204,7 +194,7 @@
 			line-height: 18px;
 			text-decoration: none;
 			color: $black;
-			
+
 			&:hover {
 				background: transparentize($pink, 0.85);
 			}
@@ -222,6 +212,15 @@
 		width: 41px;
 		height: 40px;
 		margin: 0;
+	}
+}
+
+@media screen and (min-width: 1024px){
+	.header {
+
+		.container {
+			height: 120px;
+		}
 	}
 }
 
